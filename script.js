@@ -7,6 +7,7 @@ var characters = "!@#$%&*+=?";
 var options = [numbers, uppercase, lowercase, characters]
 var array = ""
 var generated = ""
-currentoption = [Math.random() * options.length]
+for (var x = 0; x < length; x++)
+
 
 console.log(characters);
