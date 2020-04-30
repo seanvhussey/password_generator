@@ -5,6 +5,8 @@ var lowercase = "abcdefghijklmnopqrstuvwxwz";
 var characters = "!@#$%&*+=?";
 
 var options = [numbers, uppercase, lowercase, characters]
+var array = ""
+var generated = ""
 currentoption = [Math.random() * options.length]
 
 console.log(characters);
