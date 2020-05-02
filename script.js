@@ -1,32 +1,46 @@
-
-// Asks the user how long they would like their password to be.
-function create_password(length)
-
 // Characters put into the combined array if the user wants their password to contain numbers.
-var numbers.option = "0123456789";
+var numbers = "0123456789";
 
 // Characters put into the combined array if the user wants their password to contain capital letters.
-var uppercase.option = "ABCDEFGHIJKLMNOPQRSTUVWXWZ";
+var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXWZ";
 
 // Characters put into the combined array if the user wants their password to contain lowercase letters.
-var lowercase.option = "abcdefghijklmnopqrstuvwxwz";
+var lowercase = "abcdefghijklmnopqrstuvwxwz";
 
 // Characters put into the combined array if the user wants their password to contain special characters
-var characters.option = "!@#$%&*+=?";
+var characters = "!@#$%&*+=?";
 
+var confirm = true;
+var cancel = false;
 
-alert("Would you like your password to contain numbers?")
-var user_confirm = confirm("click okay to confirm")
-if(option.numbers === true){
-console.log(array+numbers.option)
-} else{
-console.log()
-};
+var array = "";
 
-for (var x = 0; x < create_password.length; x++)
+function user_input() {
+  alert("Would you like your password to contain numbers?");
+  var number_confirm = confirm("click okay to confirm");
+  if (number_confirm === true) {
+    array = array + numbers;
+  }
 
-var array = (numbers.option, + uppercase.option, + lowercase.option + characters.option)
+  alert("Would you like your password to contain uppercase letters?");
+  var uppercase_confirm = confirm("click okay to confirm");
+  if (uppercase_confirm === true) {
+    array = array + uppercase;
+  }
 
-var generated = Math.random()(array.length)
+  alert("Would you like your password to contain uppercase letters?");
+  var lowercase_confirm = confirm("click okay to confirm");
+  if (lowercase_confirm === true) {
+    array = array + lowercase;
+  }
 
+  alert("Would you like your password to contain uppercase letters?");
+  var character_confirm = confirm("click okay to confirm");
+  if (character_confirm === true) {
+    array = array + characters;
+  }
+  return array;
+}
 
+var array = user_input();
+console.log(array);
