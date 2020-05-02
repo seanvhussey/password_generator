@@ -3,40 +3,29 @@
 function create_password(length)
 
 // Characters put into the combined array if the user wants their password to contain numbers.
-var numbers = "0123456789";
+var numbers.option = "0123456789";
 
 // Characters put into the combined array if the user wants their password to contain capital letters.
-var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXWZ";
+var uppercase.option = "ABCDEFGHIJKLMNOPQRSTUVWXWZ";
 
 // Characters put into the combined array if the user wants their password to contain lowercase letters.
-var lowercase = "abcdefghijklmnopqrstuvwxwz";
+var lowercase.option = "abcdefghijklmnopqrstuvwxwz";
 
 // Characters put into the combined array if the user wants their password to contain special characters
-var characters = "!@#$%&*+=?";
+var characters.option = "!@#$%&*+=?";
 
-prompt("Would you like your password to contain numbers?")
-let userchoice = yes(true), no(false);
-if (true)(array + numbers);
-if (false)(array);
 
-prompt("Would you like your password to contain uppercase letters?")
-let userchoice = yes(true), no(false);
-if (true)(array + uppercase);
-if (false)(array)
-
-prompt("Would you like your password to contain lowercase letters?")
-let userchoice = yes(true), no(false);
-if (true)(array + lowercase);
-if (false)(array);
-
-prompt("Would you like your password to contain special characters?")
-let userchoice = yes(true), no(false);
-if (true)(array + characters);;
-if (false)(array);
+alert("Would you like your password to contain numbers?")
+var user_confirm = confirm("click okay to confirm")
+if(option.numbers === true){
+console.log(array+numbers.option)
+} else{
+console.log()
+};
 
 for (var x = 0; x < create_password.length; x++)
 
-var array = ""
+var array = (numbers.option, + uppercase.option, + lowercase.option + characters.option)
 
 var generated = Math.random()(array.length)
 
