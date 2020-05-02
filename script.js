@@ -22,7 +22,7 @@ if (false)(array);
 prompt("Would you like your password to contain uppercase letters?")
 let userchoice = yes(true), no(false);
 if (true)(array + uppercase);
-if (false)(array);
+if (false)(array)
 
 prompt("Would you like your password to contain lowercase letters?")
 let userchoice = yes(true), no(false);
@@ -31,7 +31,7 @@ if (false)(array);
 
 prompt("Would you like your password to contain special characters?")
 let userchoice = yes(true), no(false);
-if (true)(array + characters)
+if (true)(array + characters);;
 if (false)(array);
 
 for (var x = 0; x < create_password.length; x++)
