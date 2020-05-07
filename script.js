@@ -13,12 +13,11 @@ var characters = "!@#$%&*+=?";
 // Empty array to contain selected charsets.
 var array = "";
 
-// How long does the user want the password to be.
-function user_input() {
-  prompt("How long would you like your password to be?");
-  var password_length = user_input.value("Please enter a number value.");
-  console.log(password_length);
-}
+// Get the password length as a string.
+var password_length = prompt("How long would you like your password?", "0");
+
+// Convert string into an integer.
+var integer_length = parseInt(password_length);
 
 // Would the user like numbers included?
 function user_input() {
@@ -28,34 +27,36 @@ function user_input() {
     array = array + numbers;
   }
 
-  //   Would the user like uppercase letters?
+  // Would the user like uppercase letters?
   alert("Would you like your password to contain uppercase letters?");
   var uppercase_confirm = confirm("click okay to confirm.");
   if (uppercase_confirm === true) {
     array = array + uppercase;
   }
 
-  //   Would the user like lowercase letters?
+  // Would the user like lowercase letters?
   alert("Would you like your password to contain lowercase letters?");
   var lowercase_confirm = confirm("click okay to confirm.");
   if (lowercase_confirm === true) {
     array = array + lowercase;
   }
 
-  //   Would the user like special characters?
-  alert("Would you like your password to contain uppercase letters?");
+  // Would the user like special characters?
+  alert("Would you like your password to contain special characters?");
   var character_confirm = confirm("click okay to confirm.");
   if (character_confirm === true) {
     array = array + characters;
   }
-  //   Returns the finished dataset.
+  // Returns the finished dataset.
   return array;
 }
 
 var array = user_input();
-for (x = 0; x < array(password_length)[Math.random]; x++) {}
 
-function generatePassword() {
-  password_length.user_input.value;
+function password(integer_length, array) {
+  var random_string = "";
+  for (i = 0; i < integer_length; i++) {
+    random_string = array.charAt(Math.floor(Math.random() * array.length));
+  }
+  return random_string;
 }
-var whyNotworking = idontknow;
