@@ -16,9 +16,6 @@ var array = "";
 // Get the password length as a string.
 var password_length = prompt("How long would you like your password?", "0");
 
-// Convert string into an integer.
-var integer_length = parseInt(password_length);
-
 // Would the user like numbers included?
 function user_input() {
   alert("Would you like your password to contain numbers?");
@@ -53,9 +50,10 @@ function user_input() {
 
 var array = user_input();
 
-function password(integer_length, array) {
+// Random generator function.
+function password(password_length, array) {
   var random_string = "";
-  for (i = 0; i < integer_length; i++) {
+  for (i = 0; i < password_length; i++) {
     random_string = array.charAt(Math.floor(Math.random() * array.length));
   }
   return random_string;
