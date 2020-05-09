@@ -67,4 +67,3 @@ function password(password_length, array) {
   return random_string;
 }
 password(password_length, array);
-myform.row_password.value = password(password_length, array);
